@@ -30,7 +30,7 @@ const Header = () => {
 
           <li>
             <button className="btn-light" type="button">
-              Contato
+              Traga seu projeto
             </button>
           </li>
         </ul>

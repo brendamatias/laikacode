@@ -51,11 +51,7 @@
 }
 
 .navbar-fixed {
-  background: colors.$primary-color;
+  background: #ffffff;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
   z-index: 9999;
-
-  ul li a {
-    color: #ffffff !important;
-  }
 }

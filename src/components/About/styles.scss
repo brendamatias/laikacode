@@ -19,11 +19,27 @@
     }
 
     .about-content-primary {
-      color: colors.$primary-color;
+      background: linear-gradient(
+        55deg,
+        colors.$primary-color,
+        40%,
+        #2fe0da 60%
+      );
     }
 
     .about-content-secondary {
-      color: colors.$secondary-color;
+      background: linear-gradient(
+        55deg,
+        colors.$secondary-color,
+        40%,
+        #35acfc 60%
+      );
+    }
+
+    .about-content-primary,
+    .about-content-secondary {
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
   }
 }

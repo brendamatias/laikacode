@@ -1,12 +1,6 @@
 @use "../../assets/styles/colors.scss" as colors;
 
 .feedbacks {
-  background: #edf8f4;
-
-  p {
-    max-width: 300px;
-  }
-
   img {
     width: 50px;
     height: 50px;
@@ -17,7 +11,11 @@
   li {
     padding: 50px 40px;
     border-radius: 8px;
-    background: #ffffff;
+    transition: all 0.3s linear;
+
+    &:hover {
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    }
   }
 
   .feedbacks-content {
@@ -29,7 +27,7 @@
       font-size: 36px;
       display: block;
       margin-bottom: 20px;
-      color: colors.$primary-color;
+      color: colors.$secondary-color;
     }
 
     .feedbacks-content-user {
@@ -48,7 +46,7 @@
 
     .feedbacks-content-stars svg {
       margin-right: 5px;
-      color: colors.$secondary-color;
+      color: colors.$yellow-color;
     }
 
     .feedbacks-content-button {
