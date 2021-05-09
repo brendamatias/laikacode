@@ -1,0 +1,49 @@
+@use "../../assets/styles/colors.scss" as colors;
+
+.navbar {
+  width: 100%;
+  position: fixed;
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+
+    img {
+      max-width: 200px;
+    }
+
+    ul {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      letter-spacing: 0.3px;
+      font-weight: 500;
+
+      li {
+        margin-left: 40px;
+
+        a {
+          position: relative;
+          color: #2e2e2e;
+        }
+
+        &:first-child {
+          a::after {
+            display: block;
+            position: absolute;
+            content: '';
+            width: 16px;
+            height: 4px;
+            border-radius: 3px;
+            background: colors.$primary-color;
+            transition: transform 0.5s;
+            bottom: -8px;
+            right: 40%;
+          }
+        }
+      }
+    }
+  }
+}

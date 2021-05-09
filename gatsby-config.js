@@ -1,16 +1,16 @@
 module.exports = {
   siteMetadata: {
-    title: "My Gatsby Site",
+    title: 'My Gatsby Site',
   },
   plugins: [
-    "gatsby-plugin-netlify-cms",
-    "gatsby-plugin-sass",
+    'gatsby-plugin-netlify-cms',
+    'gatsby-plugin-sass',
     {
-      resolve: "gatsby-plugin-google-analytics",
+      resolve: 'gatsby-plugin-google-analytics',
       options: {
-        trackingId: "laikacode",
+        trackingId: 'laikacode',
       },
     },
-    "gatsby-plugin-react-helmet",
+    'gatsby-plugin-react-helmet',
   ],
-};
+}
