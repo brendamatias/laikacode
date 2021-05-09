@@ -26,10 +26,10 @@ const About = () => (
           </div>
         </div>
       </div>
-      <a href="/#" className="about-button">
-        Lear More <FaArrowRight />
-      </a>
     </div>
+    <a href="/#" className="about-button">
+      Lear More <FaArrowRight />
+    </a>
   </Container>
 )
 
