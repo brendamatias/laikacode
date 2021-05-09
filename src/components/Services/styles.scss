@@ -5,14 +5,23 @@
 
   ul {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 378px);
-    grid-gap: 80px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 60px;
 
     li {
       background: #ffffff;
-      box-shadow: 15px 17px 40px rgba(0, 0, 0, 0.15);
-      padding: 50px 40px;
       border-radius: 8px;
+
+      > div {
+        display: flex;
+      }
+
+      strong {
+        display: block;
+        color: #dedede;
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
     }
 
     h2 {
@@ -21,37 +30,13 @@
     }
 
     .services-icons {
-      width: max-content;
+      height: max-content;
       background: #e9f6ee;
       color: colors.$primary-color;
       padding: 20px 20px 4px 20px;
       font-size: 36px;
       border-radius: 15px;
-      margin-bottom: 35px;
-    }
-
-    .services-button {
-      display: flex;
-      align-items: center;
-      width: max-content;
-      margin-top: 35px;
-      cursor: pointer;
-      border-radius: 3px;
-      letter-spacing: 0.3px;
-      padding: 10px 0;
-      font-weight: 500;
-      color: #595959;
-      transition: all 0.3s linear;
-
-      &:hover {
-        background: colors.$primary-color;
-        color: #ffffff;
-        padding: 10px 42px;
-      }
-
-      svg {
-        margin-left: 8px;
-      }
+      margin-right: 35px;
     }
   }
 }

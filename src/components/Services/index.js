@@ -1,7 +1,25 @@
 import * as React from 'react'
-import { FaInstagram, FaArrowRight } from 'react-icons/fa'
+import { FaInstagram } from 'react-icons/fa'
 import Container from '../Container'
 import './styles.scss'
+
+const servicesContent = [
+  {
+    title: 'Web Development',
+    text: 'At vero eos censes tantas res gessite sine metu contineret',
+    icon: '',
+  },
+  {
+    title: 'Bussiness Development',
+    text: 'At vero eos censes tantas res gessite sine metu contineret',
+    icon: '',
+  },
+  {
+    title: 'Digital Marketing',
+    text: 'At vero eos censes tantas res gessite sine metu contineret',
+    icon: '',
+  },
+]
 
 const Services = () => (
   <Container className="services">
@@ -16,54 +34,20 @@ const Services = () => (
       </div>
     </div>
     <ul>
-      <li>
-        <div>
-          <div className="services-icons">
-            <FaInstagram />
+      {servicesContent.map((service, index) => (
+        <li>
+          <div>
+            <div className="services-icons">
+              <FaInstagram />
+            </div>
+            <div>
+              <strong>0{index + 1}</strong>
+              <h2>{service.title}</h2>
+              <p>{service.text}</p>
+            </div>
           </div>
-          <h2>Grow Your Business</h2>
-          <p>
-            Our Bussiness Plan is a writeen document describing a company core
-            bussines activities, objectives and how it plans to achieve its
-            goals
-          </p>
-          <a href="/#" className="services-button">
-            Lear More <FaArrowRight />
-          </a>
-        </div>
-      </li>
-      <li>
-        <div>
-          <div className="services-icons">
-            <FaInstagram />
-          </div>
-          <h2>Grow Your Business</h2>
-          <p>
-            Our Bussiness Plan is a writeen document describing a company core
-            bussines activities, objectives and how it plans to achieve its
-            goals
-          </p>
-          <a href="/#" className="services-button button">
-            Lear More <FaArrowRight />
-          </a>
-        </div>
-      </li>
-      <li>
-        <div>
-          <div className="services-icons">
-            <FaInstagram />
-          </div>
-          <h2>Grow Your Business</h2>
-          <p>
-            Our Bussiness Plan is a writeen document describing a company core
-            bussines activities, objectives and how it plans to achieve its
-            goals
-          </p>
-          <a href="/#" className="services-button">
-            Lear More <FaArrowRight />
-          </a>
-        </div>
-      </li>
+        </li>
+      ))}
     </ul>
   </Container>
 )
