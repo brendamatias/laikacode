@@ -1,4 +1,78 @@
 @use "../../assets/styles/colors.scss" as colors;
 
 .feedbacks {
+  background: #edf8f4;
+
+  p {
+    max-width: 300px;
+  }
+
+  img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+
+  li {
+    padding: 50px 40px;
+    border-radius: 8px;
+    background: #ffffff;
+  }
+
+  .feedbacks-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+
+    .feedbacks-content-quot {
+      font-size: 36px;
+      display: block;
+      margin-bottom: 20px;
+      color: colors.$primary-color;
+    }
+
+    .feedbacks-content-user {
+      display: flex;
+      letter-spacing: 0.3px;
+      margin: 20px 0;
+
+      strong {
+        display: block;
+      }
+
+      span {
+        font-size: 12px;
+      }
+    }
+
+    .feedbacks-content-stars svg {
+      margin-right: 5px;
+      color: colors.$secondary-color;
+    }
+
+    .feedbacks-content-button {
+      display: flex;
+      align-items: center;
+      width: max-content;
+      margin-top: 35px;
+      cursor: pointer;
+      border-radius: 3px;
+      letter-spacing: 0.3px;
+      padding: 10px 0;
+      font-weight: 500;
+      color: #595959;
+      transition: all 0.3s linear;
+
+      &:hover {
+        background: colors.$primary-color;
+        color: #ffffff;
+        padding: 10px 42px;
+      }
+
+      svg {
+        margin-left: 8px;
+      }
+    }
+  }
 }

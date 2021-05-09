@@ -5,7 +5,7 @@ import './styles.scss'
 
 const Services = () => (
   <Container className="services">
-    <div className="section-header ">
+    <div className="section-header">
       <h3>What we do</h3>
       <div>
         <h1>Perfect Solution For Your Business</h1>
@@ -59,7 +59,7 @@ const Services = () => (
             bussines activities, objectives and how it plans to achieve its
             goals
           </p>
-          <a href="/#" className="services-button button">
+          <a href="/#" className="services-button">
             Lear More <FaArrowRight />
           </a>
         </div>
