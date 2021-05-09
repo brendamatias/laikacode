@@ -24,7 +24,7 @@ const servicesContent = [
 const Services = () => (
   <Container className="services">
     <div className="section-header">
-      <h3>What we do</h3>
+      <h3>O que fazemos</h3>
       <div>
         <h1>Perfect Solution For Your Business</h1>
         <p>

@@ -6,7 +6,7 @@ import './styles.scss'
 const About = () => (
   <Container>
     <div className="section-header">
-      <h3>About us</h3>
+      <h3>Sobre nós</h3>
       <div>
         <h1>We build adva ds corporate systems</h1>
         <div className="about-content">
@@ -28,7 +28,7 @@ const About = () => (
       </div>
     </div>
     <a href="/#" className="about-button">
-      Lear More <FaArrowRight />
+      Ler Mais <FaArrowRight />
     </a>
   </Container>
 )

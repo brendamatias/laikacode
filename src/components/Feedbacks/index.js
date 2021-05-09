@@ -32,7 +32,7 @@ const feedbacksUsers = [
 const Feedbacks = () => (
   <Container className="feedbacks">
     <div className="section-header">
-      <h3>What we do</h3>
+      <h3>O que dizem sobre nós</h3>
       <div>
         <h1>Perfect Solution For Your Business</h1>
         <p>
@@ -65,7 +65,7 @@ const Feedbacks = () => (
           </div>
 
           <a href="/#" className="feedbacks-content-button">
-            See project <FaArrowRight />
+            Ver Projeto <FaArrowRight />
           </a>
         </li>
       ))}
