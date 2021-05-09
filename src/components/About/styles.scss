@@ -1,0 +1,53 @@
+@use "../../assets/styles/colors.scss" as colors;
+
+.about-content {
+  p {
+    display: inline-block;
+  }
+
+  > div {
+    display: flex;
+    margin-top: 15px;
+
+    > div:first-child {
+      margin-right: 60px;
+    }
+
+    h2 {
+      display: block;
+      font-size: 46px;
+    }
+
+    .about-content-primary {
+      color: colors.$primary-color;
+    }
+
+    .about-content-secondary {
+      color: colors.$secondary-color;
+    }
+  }
+}
+
+.about-button {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  margin-top: 35px;
+  cursor: pointer;
+  border-radius: 3px;
+  letter-spacing: 0.3px;
+  padding: 10px 0;
+  font-weight: 500;
+  color: #595959;
+  transition: all 0.3s linear;
+
+  &:hover {
+    background: colors.$primary-color;
+    color: #ffffff;
+    padding: 10px 42px;
+  }
+
+  svg {
+    margin-left: 8px;
+  }
+}

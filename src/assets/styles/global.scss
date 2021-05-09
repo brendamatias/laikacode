@@ -59,9 +59,62 @@ img {
   -webkit-user-draggit: none;
 }
 
+p {
+  color: #6c6c6c;
+}
+
 .bg-home {
   background: #ffffff;
   // background: #ecf8f4;
   //background: linear-gradient(55deg, #ffffff 40%, #fef7ef 60%);
   //background: linear-gradient(70deg, #f4f4f4 48%, #e44858 40%);
+}
+
+.section {
+  border-top: 1px solid #f5f4ef;
+  padding: 100px 0;
+}
+
+.section-header {
+  margin-bottom: 80px;
+
+  > div {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  h3 {
+    display: block;
+    color: $primary-color;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 80px;
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 64px;
+      height: 2px;
+      border-radius: 3px;
+      background: $primary-color;
+      transition: transform 0.5s;
+      left: 0;
+      bottom: 50%;
+      transform: translateY(50%);
+    }
+  }
+
+  h1 {
+    font-size: 46px;
+    max-width: 500px;
+    color: #2e2e2e;
+  }
+
+  p {
+    font-size: 16px;
+    max-width: 450px;
+  }
 }

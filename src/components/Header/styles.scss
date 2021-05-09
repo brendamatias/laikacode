@@ -34,13 +34,14 @@
             display: block;
             position: absolute;
             content: '';
-            width: 16px;
+            width: 17px;
             height: 4px;
             border-radius: 3px;
-            background: colors.$primary-color;
+            background: colors.$secondary-color;
             transition: transform 0.5s;
             bottom: -8px;
-            right: 40%;
+            left: 50%;
+            transform: translateX(-50%);
           }
         }
       }
