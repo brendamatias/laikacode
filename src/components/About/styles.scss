@@ -1,5 +1,26 @@
 @use "../../assets/styles/colors.scss" as colors;
 
+.about {
+  color: #fff;
+
+  position: relative;
+  .container {
+    background: black;
+    padding-left: 80px;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 25%;
+    background-color: black;
+    z-index: -1;
+  }
+}
+
 .about-content {
   p {
     display: inline-block;
@@ -28,12 +49,7 @@
     }
 
     .about-content-secondary {
-      background: linear-gradient(
-        55deg,
-        colors.$secondary-color,
-        40%,
-        #35acfc 60%
-      );
+      background: linear-gradient(55deg, colors.$blue-color, 40%, #35acfc 60%);
     }
 
     .about-content-primary,
@@ -54,7 +70,7 @@
   letter-spacing: 0.3px;
   padding: 10px 0;
   font-weight: 500;
-  color: #595959;
+  color: #ffffff;
   transition: all 0.3s linear;
 
   &:hover {

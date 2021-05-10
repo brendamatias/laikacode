@@ -4,7 +4,7 @@ import Container from '../Container'
 import './styles.scss'
 
 const About = () => (
-  <Container>
+  <Container className="section-dark about">
     <div className="section-header">
       <h3>Sobre nós</h3>
       <div>

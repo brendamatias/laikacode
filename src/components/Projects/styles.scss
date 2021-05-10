@@ -15,6 +15,10 @@
 
     &:nth-child(2n) {
       flex-direction: row-reverse;
+      text-align: right;
+      .projects-content-button {
+        float: right;
+      }
     }
 
     &:not(:last-child) {

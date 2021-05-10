@@ -2,7 +2,7 @@ import * as React from 'react'
 import { FaInstagram, FaFacebookF, FaLinkedin } from 'react-icons/fa'
 import './styles.scss'
 
-import logoLaikaCode from '../../assets/images/logo.svg'
+import logoLaikaCode from '../../assets/images/logo-light.svg'
 
 const Footer = () => (
   <footer className="footer">

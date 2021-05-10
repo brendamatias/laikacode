@@ -1,3 +1,5 @@
+@use "../../assets/styles/colors.scss" as colors;
+
 .home {
   display: flex;
   align-items: center;
@@ -5,9 +7,9 @@
   height: 100vh;
   background-image: url('/questions-bro.svg');
   // background-image: url('../../assets/images/home-woman.svg');
-  background-position: bottom 0 right 120px;
+  background-position: bottom 10% right -600px;
   background-repeat: no-repeat;
-  background-size: 750px;
+  background-size: 1600px;
 
   h1 {
     font-size: 44px;

@@ -44,15 +44,36 @@ button {
   border-radius: 3px;
   letter-spacing: 0.3px;
   font-weight: 600;
-  border: 2px solid $primary-color;
-  background: $primary-color;
-  color: #ffffff;
+  border: 2px solid $secondary-color;
+  background: $secondary-color;
+  color: #000000;
+  transition: all 0.3s linear;
+
+  &:hover {
+    border: 2px solid #000000;
+    background: #000000;
+    color: #ffffff;
+  }
+}
+
+.btn-dark {
+  &:hover {
+    border: 2px solid #ffffff;
+    background: #ffffff;
+    color: #000000;
+  }
 }
 
 .btn-light {
   background: #ffffff;
-  color: $primary-color;
-  border: 2px solid $primary-color;
+  color: #000000;
+  border: 2px solid #ffffff;
+
+  &:hover {
+    border: 2px solid $secondary-color;
+    background: #ffffff;
+    color: #000000;
+  }
 }
 
 img {
@@ -116,5 +137,20 @@ p {
   p {
     font-size: 16px;
     max-width: 450px;
+  }
+}
+
+.section-dark {
+  h3 {
+    color: #fff337;
+
+    &::before {
+      background: #fff337;
+    }
+  }
+
+  h1,
+  p {
+    color: #fff;
   }
 }
