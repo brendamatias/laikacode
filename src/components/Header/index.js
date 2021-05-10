@@ -25,7 +25,7 @@ const Header = () => {
           ))}
 
           <li>
-            <button className="btn-light" type="button">
+            <button className={offset > 10 ? '' : 'btn-light'} type="button">
               Traga seu projeto
             </button>
           </li>
