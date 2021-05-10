@@ -12,7 +12,9 @@ const About = () => (
         <div className="about-content">
           <p>
             As our motto, we always provide the best service especially for you
-            and your company by growing your company to be better.
+            and your company by growing your company to be better service
+            especially for you and your company by growing your company to be
+            better.
           </p>
           <div>
             <div>

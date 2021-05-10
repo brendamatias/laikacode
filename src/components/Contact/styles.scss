@@ -1,0 +1,32 @@
+@use "../../assets/styles/colors.scss" as colors;
+
+.contact {
+  background: colors.$primary-color;
+  text-align: center;
+
+  h1 {
+    font-size: 46px;
+    color: #ffffff;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  h6 {
+    color: #dedede;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 10px 0 20px 0;
+  }
+
+  p {
+    max-width: 700px;
+    color: #f4f4f4;
+  }
+
+  button {
+    background: #ffffff;
+    color: colors.$primary-color;
+    border-radius: 10px;
+    border: 2px solid #fff;
+  }
+}
