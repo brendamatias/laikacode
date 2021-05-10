@@ -21,6 +21,11 @@ const projectsContent = [
     content:
       'Iam trusted my company in allies and the results have been satisfying because my company has growing. Iam trusted my company in allies and the results have been satisfying because my company has growing.',
   },
+  {
+    name: 'Roda Acessível',
+    content:
+      'Iam trusted my company in allies and the results have been satisfying because my company has growing. Iam trusted my company in allies and the results have been satisfying because my company has growing.',
+  },
 ]
 
 const Projects = () => (
@@ -39,7 +44,7 @@ const Projects = () => (
     <ul className="projects-content">
       {projectsContent.map((project, index) => (
         <li>
-          {index % 2 === 0 ? <img src={projectImage} alt="Project" /> : ''}
+          <img src={projectImage} alt="Project" />
           <div>
             <h3>0{index + 1}</h3>
             <h1>{project.name}</h1>
@@ -49,7 +54,6 @@ const Projects = () => (
               Ver Projeto <FaArrowRight />
             </a>
           </div>
-          {index % 2 !== 0 ? <img src={projectImage} alt="Project" /> : ''}
         </li>
       ))}
     </ul>
