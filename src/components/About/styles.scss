@@ -2,23 +2,7 @@
 
 .about {
   color: #fff;
-
-  position: relative;
-  .container {
-    background: black;
-    padding-left: 80px;
-  }
-
-  &::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 25%;
-    background-color: black;
-    z-index: -1;
-  }
+  background: black;
 }
 
 .about-content {

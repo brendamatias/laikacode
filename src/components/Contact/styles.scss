@@ -2,6 +2,14 @@
 
 .contact {
   background: black;
+  background-image: url('/bg-contact.svg');
+  background-position: bottom -33px right 200px;
+  background-repeat: no-repeat;
+  background-size: 400px;
+  > div {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
   text-align: center;
 
   h1 {

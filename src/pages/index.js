@@ -5,6 +5,7 @@ import About from '../components/About'
 import Services from '../components/Services'
 import Projects from '../components/Projects'
 import Feedbacks from '../components/Feedbacks'
+import Contact from '../components/Contact'
 import Footer from '../components/Footer'
 
 import '../assets/styles/global.scss'
@@ -20,6 +21,7 @@ const IndexPage = () => (
     <Services />
     <Projects />
     <Feedbacks />
+    <Contact />
     <Footer />
   </main>
 )
