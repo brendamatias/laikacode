@@ -1,8 +1,12 @@
 @use "../../assets/styles/colors.scss" as colors;
 
 .about {
-  color: #fff;
-  background: black;
+  color: colors.$white;
+  background: colors.$bg-black;
+
+  .btn {
+    color: colors.$white;
+  }
 }
 
 .about-content {
@@ -24,46 +28,17 @@
     }
 
     .about-content-primary {
-      background: linear-gradient(
-        55deg,
-        colors.$primary-color,
-        40%,
-        #2fe0da 60%
-      );
+      background: linear-gradient(55deg, colors.$primary, 40%, #2fe0da 60%);
     }
 
     .about-content-secondary {
-      background: linear-gradient(55deg, colors.$blue-color, 40%, #35acfc 60%);
+      background: linear-gradient(55deg, colors.$blue, 40%, #35acfc 60%);
     }
 
     .about-content-primary,
     .about-content-secondary {
       background-clip: text;
-      -webkit-text-fill-color: transparent;
+      -webkit-text-fill: transparent;
     }
-  }
-}
-
-.about-button {
-  display: flex;
-  align-items: center;
-  width: max-content;
-  margin-top: 35px;
-  cursor: pointer;
-  border-radius: 3px;
-  letter-spacing: 0.3px;
-  padding: 10px 0;
-  font-weight: 500;
-  color: #ffffff;
-  transition: all 0.3s linear;
-
-  &:hover {
-    background: colors.$primary-color;
-    color: #ffffff;
-    padding: 10px 42px;
-  }
-
-  svg {
-    margin-left: 8px;
   }
 }

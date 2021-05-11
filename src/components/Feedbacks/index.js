@@ -64,7 +64,7 @@ const Feedbacks = () => (
             <FaStar />
           </div>
 
-          <a href="/#" className="feedbacks-content-button">
+          <a href="/#" className="btn">
             Ver Projeto <FaArrowRight />
           </a>
         </li>

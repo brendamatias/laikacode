@@ -20,6 +20,7 @@ body,
 
 body {
   -webkit-font-smoothing: antialiased;
+  background: $bg-light;
 }
 
 body,
@@ -44,35 +45,59 @@ button {
   border-radius: 3px;
   letter-spacing: 0.3px;
   font-weight: 600;
-  border: 2px solid $secondary-color;
-  background: $secondary-color;
-  color: #000000;
+  border: 2px solid $secondary;
+  background: $secondary;
+  color: $bg-black;
   transition: all 0.3s linear;
 
   &:hover {
-    border: 2px solid #000000;
-    background: #000000;
-    color: #ffffff;
+    border: 2px solid $bg-black;
+    background: $bg-black;
+    color: $white;
+  }
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  margin-top: 35px;
+  cursor: pointer;
+  border-radius: 3px;
+  letter-spacing: 0.3px;
+  padding: 10px 0;
+  font-weight: 500;
+  color: $gray;
+  transition: all 0.3s linear;
+
+  &:hover {
+    background: $primary;
+    color: $white;
+    padding: 10px 42px;
+  }
+
+  svg {
+    margin-left: 8px;
   }
 }
 
 .btn-dark {
   &:hover {
-    border: 2px solid #ffffff;
-    background: #ffffff;
-    color: #000000;
+    border: 2px solid $white;
+    background: $white;
+    color: $bg-black;
   }
 }
 
 .btn-light {
-  background: #ffffff;
-  color: #000000;
-  border: 2px solid #ffffff;
+  background: $white;
+  color: $bg-black;
+  border: 2px solid $white;
 
   &:hover {
-    border: 2px solid $secondary-color;
-    background: #ffffff;
-    color: #000000;
+    border: 2px solid $secondary;
+    background: $white;
+    color: $bg-black;
   }
 }
 
@@ -81,13 +106,13 @@ img {
 }
 
 p {
-  color: #6c6c6c;
+  color: $paragraph;
 }
 
 .bg-home {
-  background: #ffffff;
+  background: $white;
   // background: #ecf8f4;
-  //background: linear-gradient(55deg, #ffffff 40%, #fef7ef 60%);
+  //background: linear-gradient(55deg, $white 40%, #fef7ef 60%);
   //background: linear-gradient(70deg, #f4f4f4 48%, #e44858 40%);
 }
 
@@ -96,7 +121,7 @@ p {
 }
 
 .section-border > div {
-  border-top: 1px solid #f5f4ef;
+  border-top: 1px solid $border-light;
 }
 
 .section-header {
@@ -109,7 +134,7 @@ p {
 
   h3 {
     display: block;
-    color: $primary-color;
+    color: $primary;
     text-transform: uppercase;
     letter-spacing: 2.5px;
     font-weight: 500;
@@ -123,7 +148,7 @@ p {
       width: 64px;
       height: 2px;
       border-radius: 3px;
-      background: $primary-color;
+      background: $primary;
       transition: transform 0.5s;
       left: 0;
       bottom: 50%;
@@ -134,7 +159,7 @@ p {
   h1 {
     font-size: 46px;
     max-width: 500px;
-    color: #2e2e2e;
+    color: $title;
   }
 
   p {
@@ -145,15 +170,15 @@ p {
 
 .section-dark {
   h3 {
-    color: #fff337;
+    color: $secondary;
 
     &::before {
-      background: #fff337;
+      background: $secondary;
     }
   }
 
   h1,
   p {
-    color: #fff;
+    color: $white;
   }
 }

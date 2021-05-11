@@ -27,7 +27,7 @@
 
         a {
           position: relative;
-          color: #2e2e2e;
+          color: colors.$title;
         }
 
         &:first-child {
@@ -38,7 +38,7 @@
             width: 17px;
             height: 4px;
             border-radius: 3px;
-            background: colors.$secondary-color;
+            background: colors.$secondary;
             transition: transform 0.5s;
             bottom: -8px;
             left: 50%;
@@ -51,7 +51,7 @@
 }
 
 .navbar-fixed {
-  background: #ffffff;
+  background: colors.$white;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
   z-index: 9999;
 }

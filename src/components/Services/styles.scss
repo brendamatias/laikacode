@@ -1,15 +1,13 @@
 @use "../../assets/styles/colors.scss" as colors;
 
 .services {
-  background: #fcfdfd;
-
   ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 60px;
 
     li {
-      background: #ffffff;
+      background: colors.$white;
       border-radius: 8px;
 
       > div {
@@ -18,21 +16,21 @@
 
       strong {
         display: block;
-        color: #dedede;
+        color: colors.$gray-light;
         font-size: 18px;
         margin-bottom: 10px;
       }
     }
 
     h2 {
-      color: #2e2e2e;
+      color: colors.$title;
       margin-bottom: 14px;
     }
 
     .services-icons {
       height: max-content;
       background: #e9f6ee;
-      color: colors.$primary-color;
+      color: colors.$primary;
       padding: 20px 20px 4px 20px;
       font-size: 36px;
       border-radius: 15px;

@@ -29,7 +29,7 @@ const About = () => (
         </div>
       </div>
     </div>
-    <a href="/#" className="about-button">
+    <a href="/#" className="btn">
       Ler Mais <FaArrowRight />
     </a>
   </Container>

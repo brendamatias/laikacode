@@ -1,11 +1,12 @@
 @use "../../assets/styles/colors.scss" as colors;
 
 .contact {
-  background: black;
+  background: colors.$bg-black;
   background-image: url('/bg-contact.svg');
   background-position: bottom -33px right 200px;
   background-repeat: no-repeat;
   background-size: 400px;
+
   > div {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
@@ -14,7 +15,7 @@
 
   h1 {
     font-size: 62px;
-    color: #ffffff;
+    color: colors.$white;
     max-width: 700px;
     margin: 0 auto 30px auto;
   }

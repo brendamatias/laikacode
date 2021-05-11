@@ -50,7 +50,7 @@ const Projects = () => (
             <h1>{project.name}</h1>
             <p>{project.content}</p>
 
-            <a href="/#" className="projects-content-button">
+            <a href="/#" className="btn">
               Ver Projeto <FaArrowRight />
             </a>
           </div>

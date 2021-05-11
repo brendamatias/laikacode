@@ -27,7 +27,7 @@
       font-size: 36px;
       display: block;
       margin-bottom: 20px;
-      color: colors.$secondary-color;
+      color: colors.$secondary;
     }
 
     .feedbacks-content-user {
@@ -46,31 +46,7 @@
 
     .feedbacks-content-stars svg {
       margin-right: 5px;
-      color: colors.$yellow-color;
-    }
-
-    .feedbacks-content-button {
-      display: flex;
-      align-items: center;
-      width: max-content;
-      margin-top: 35px;
-      cursor: pointer;
-      border-radius: 3px;
-      letter-spacing: 0.3px;
-      padding: 10px 0;
-      font-weight: 500;
-      color: #595959;
-      transition: all 0.3s linear;
-
-      &:hover {
-        background: colors.$primary-color;
-        color: #ffffff;
-        padding: 10px 42px;
-      }
-
-      svg {
-        margin-left: 8px;
-      }
+      color: colors.$orange;
     }
   }
 }
