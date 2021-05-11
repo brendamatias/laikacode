@@ -29,7 +29,7 @@ const projectsContent = [
 ]
 
 const Projects = () => (
-  <Container className="projects">
+  <Container id="projects" className="projects section-border">
     <div className="section-header">
       <h3>Nossos projetos</h3>
       <div>

@@ -2,9 +2,18 @@
 
 .footer {
   background: black;
-  color: #fff;
 
-  p {
+  a {
+    transition: all 0.2s linear;
+
+    &:hover {
+      color: colors.$secondary-color;
+    }
+  }
+
+  a,
+  p,
+  strong {
     color: #fff;
   }
 
@@ -57,7 +66,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: #fff;
 
     span {
       color: #6c6c6c;

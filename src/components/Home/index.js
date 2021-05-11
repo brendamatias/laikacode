@@ -3,20 +3,20 @@ import { FaSearch } from 'react-icons/fa'
 import './styles.scss'
 
 const Home = () => (
-  <section className="home">
+  <section id="home" className="home">
     <div className="container">
       <h4>Lorem Ipsum is simply dummy</h4>
       <h1>Lorem Ipsum is simply dummy text of the printin</h1>
 
-      <div className="container-input">
+      <div className="home-content__input">
         <div>
-          <FaSearch color="#555555" size={18} />
+          <FaSearch />
           <strong>O que você está procurando?</strong>
         </div>
 
         <button type="button">Procurar</button>
       </div>
-      <div className="previously-researched">
+      <div className="home-content__previously-researched">
         <span>Pesquisados anteriormente:</span>
 
         <ul>

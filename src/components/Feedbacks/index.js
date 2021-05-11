@@ -30,7 +30,7 @@ const feedbacksUsers = [
 ]
 
 const Feedbacks = () => (
-  <Container className="feedbacks">
+  <Container className="feedbacks section-border">
     <div className="section-header">
       <h3>O que dizem sobre nós</h3>
       <div>

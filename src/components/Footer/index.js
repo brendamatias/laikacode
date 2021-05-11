@@ -19,28 +19,52 @@ const Footer = () => (
         <div>
           <strong>About</strong>
           <ul>
-            <li>About us</li>
-            <li>Features</li>
-            <li>News</li>
-            <li>Careers</li>
+            <li>
+              <a href="/#">About us</a>
+            </li>
+            <li>
+              <a href="/#">Features</a>
+            </li>
+            <li>
+              <a href="/#">News</a>
+            </li>
+            <li>
+              <a href="/#">Careers</a>
+            </li>
           </ul>
         </div>
         <div>
           <strong>Company</strong>
           <ul>
-            <li>Our Team</li>
-            <li>Partner With Us</li>
-            <li>FAQ</li>
-            <li>Blog</li>
+            <li>
+              <a href="/#">Our Team</a>
+            </li>
+            <li>
+              <a href="/#">Partner With Us</a>
+            </li>
+            <li>
+              <a href="/#">FAQ</a>
+            </li>
+            <li>
+              <a href="/#">Blog</a>
+            </li>
           </ul>
         </div>
         <div>
           <strong>Support</strong>
           <ul>
-            <li>Account</li>
-            <li>Support Center</li>
-            <li>Feedback</li>
-            <li>Contact Us</li>
+            <li>
+              <a href="/#">Account</a>
+            </li>
+            <li>
+              <a href="/#">Support Center</a>
+            </li>
+            <li>
+              <a href="/#">Feedback</a>
+            </li>
+            <li>
+              <a href="/#">Contact Us</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -50,9 +74,15 @@ const Footer = () => (
       <div className="container">
         <span>Copyright, LaikaCode 2021, All rights reserved.</span>
         <div>
-          <FaInstagram />
-          <FaFacebookF />
-          <FaLinkedin />
+          <a href="https://www.instagram.com/laikacode/" target="blank">
+            <FaInstagram />
+          </a>
+          <a href="https://www.facebook.com/laikacode" target="blank">
+            <FaFacebookF />
+          </a>
+          <a href="https://www.linkedin.com/company/laikacode/" target="blank">
+            <FaLinkedin />
+          </a>
         </div>
       </div>
     </div>
