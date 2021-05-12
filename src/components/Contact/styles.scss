@@ -25,4 +25,14 @@
     font-size: 18px;
     font-weight: 700;
   }
+
+  @media (max-width: 500px) {
+    background-image: none;
+
+    h1 {
+      font-size: 48px;
+      width: 100%;
+      margin: 0 auto 30px auto;
+    }
+  }
 }

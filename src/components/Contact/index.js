@@ -5,7 +5,7 @@ import './styles.scss'
 const Contact = () => (
   <Container className="contact">
     <div>
-      <h1>Lets Talk!</h1>
+      <h1>Vamos conversar!</h1>
       <button className="btn-dark" type="button">
         Contato
       </button>

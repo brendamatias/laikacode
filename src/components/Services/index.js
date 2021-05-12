@@ -5,7 +5,7 @@ import './styles.scss'
 
 const servicesContent = [
   {
-    title: 'Web Development',
+    title: 'Desenvolvimento Web',
     text: 'At vero eos censes tantas res gessite sine metu contineret',
     icon: '',
   },
@@ -26,7 +26,7 @@ const Services = () => (
     <div className="section-header">
       <h3>O que fazemos</h3>
       <div>
-        <h1>Perfect Solution For Your Business</h1>
+        <h1>Solução perfeita para o seu negócio</h1>
         <p>
           As our motto, we always provide the best service especially for you
           and your company by growing your company to be better.

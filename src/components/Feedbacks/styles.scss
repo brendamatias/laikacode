@@ -20,7 +20,7 @@
 
   .feedbacks-content {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, 1fr);
     grid-gap: 40px;
 
     .feedbacks-content-quot {
@@ -47,6 +47,16 @@
     .feedbacks-content-stars svg {
       margin-right: 5px;
       color: colors.$orange;
+    }
+  }
+
+  @media (max-width: 500px) {
+    li {
+      padding: 20px 20px;
+    }
+
+    .feedbacks-content {
+      grid-gap: 10px;
     }
   }
 }
