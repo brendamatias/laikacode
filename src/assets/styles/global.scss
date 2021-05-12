@@ -136,7 +136,6 @@ p {
 
   > div {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
   }
 
@@ -176,6 +175,10 @@ p {
   }
 
   @media (max-width: 500px) {
+    > div {
+      flex-wrap: wrap;
+    }
+
     margin-bottom: 60px;
 
     h3 {

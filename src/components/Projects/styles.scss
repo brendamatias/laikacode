@@ -10,7 +10,6 @@
 
   li {
     display: flex;
-    flex-wrap: wrap;
     grid-gap: 60px;
     width: 100%;
 
@@ -52,6 +51,8 @@
     }
 
     li {
+      flex-wrap: wrap;
+
       &:nth-child(2n) {
         flex-direction: initial;
         text-align: left;

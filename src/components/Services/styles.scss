@@ -3,7 +3,7 @@
 .services {
   ul {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 60px;
 
     li {
@@ -40,6 +40,8 @@
 
   @media (max-width: 500px) {
     ul {
+      grid-template-columns: repeat(auto-fill, 1fr) !important;
+
       li > div {
         flex-wrap: wrap;
       }
