@@ -4,7 +4,7 @@ import './styles.scss'
 import logoLaikaCode from '../../assets/images/logo.svg'
 
 const Header = () => {
-  const path = window.location.href
+  // const path = window.location.href
   const [offset, setOffset] = React.useState(0)
   const links = [
     { id: 'home', label: 'Início' },
@@ -12,14 +12,13 @@ const Header = () => {
     { id: 'services', label: 'Serviços' },
     { id: 'projects', label: 'Projetos' },
   ]
-  const { pathname, hash } = window.location
-  React.useEffect(() => {
-    if (hash) window.location.href = `${pathname}${hash}`
-  }, [hash])
+  // const { pathname, hash } = window.location
+  // React.useEffect(() => {
+  //   if (hash) window.location.href = `${pathname}${hash}`
+  // }, [hash])
 
   React.useEffect(() => {
     window.onscroll = () => {
-      console.log(path)
       setOffset(window.pageYOffset)
     }
   }, [])
