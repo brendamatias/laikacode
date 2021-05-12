@@ -10,6 +10,7 @@
 
   li {
     display: flex;
+    flex-wrap: wrap;
     grid-gap: 60px;
     width: 100%;
 
@@ -40,6 +41,31 @@
 
       p {
         line-height: 26px;
+      }
+    }
+  }
+
+  @media (max-width: 500px) {
+    img {
+      width: 100%;
+      height: 200px;
+    }
+
+    li {
+      &:nth-child(2n) {
+        flex-direction: initial;
+        text-align: left;
+        .projects-content-button {
+          float: left;
+        }
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 80px;
+      }
+
+      > div {
+        width: 100%;
       }
     }
   }

@@ -41,4 +41,10 @@
       -webkit-text-fill: transparent;
     }
   }
+
+  @media (max-width: 500px) {
+    p {
+      margin-bottom: 20px;
+    }
+  }
 }
