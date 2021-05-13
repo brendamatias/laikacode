@@ -28,21 +28,24 @@
         a {
           position: relative;
           color: colors.$title;
-        }
 
-        &:first-child {
-          a::after {
+          &::after {
             display: block;
             position: absolute;
             content: '';
-            width: 17px;
-            height: 4px;
+            width: 0;
+            height: 0;
             border-radius: 3px;
             background: colors.$secondary;
-            transition: transform 0.5s;
             bottom: -8px;
             left: 50%;
             transform: translateX(-50%);
+            transition: all 0.2s linear;
+          }
+
+          &:hover::after {
+            width: 17px;
+            height: 4px;
           }
         }
       }
@@ -54,4 +57,9 @@
   background: colors.$white;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
   z-index: 9999;
+}
+
+.navbar-link__active::after {
+  width: 17px !important;
+  height: 4px !important;
 }
